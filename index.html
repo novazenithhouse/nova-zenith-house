@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100c22">
+  <title>Nova Zenith House | Built Beyond Limits</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #f8f1e5;
+      background:
+        radial-gradient(ellipse at 50% 38%, #40305f 0%, transparent 48%),
+        linear-gradient(180deg, #080a1c 0%, #211534 56%, #080910 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(2px 2px at 12% 18%, white 50%, transparent 100%),
+        radial-gradient(1px 1px at 28% 33%, white 50%, transparent 100%),
+        radial-gradient(2px 2px at 76% 17%, white 50%, transparent 100%),
+        radial-gradient(1px 1px at 88% 42%, white 50%, transparent 100%),
+        radial-gradient(1px 1px at 63% 28%, white 50%, transparent 100%),
+        radial-gradient(2px 2px at 42% 12%, white 50%, transparent 100%),
+        radial-gradient(1px 1px at 19% 60%, white 50%, transparent 100%);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      padding: 32px 22px;
+      width: 100%;
+    }
+
+    .star {
+      color: #f4d58a;
+      font-size: 58px;
+      line-height: 1;
+      text-shadow: 0 0 28px #e8c36c;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 6vw, 56px);
+      font-weight: normal;
+      letter-spacing: 0.13em;
+      line-height: 1.3;
+    }
+
+    .tagline {
+      margin-top: 18px;
+      color: #d9c59d;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.24em;
+    }
+
+    .contact {
+      margin-top: 38px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .contact a {
+      color: #f8f1e5;
+      text-decoration: none;
+      border-bottom: 1px solid #bda46f;
+      padding-bottom: 5px;
+    }
+
+    .contact a:hover {
+      color: #f4d58a;
+    }
+
+    .mountains {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 25vh;
+      min-height: 130px;
+      z-index: 0;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        letter-spacing: 0.08em;
+      }
+
+      .tagline {
+        letter-spacing: 0.15em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="star">✧</div>
+    <h1>NOVA ZENITH HOUSE</h1>
+    <div class="tagline">Built Beyond Limits</div>
+    <div class="contact">
+      <a href="mailto:services@novazenithhouse.co.za">
+        services@novazenithhouse.co.za
+      </a>
+    </div>
+  </main>
+
+  <svg class="mountains" viewBox="0 0 1200 300"
+       preserveAspectRatio="xMidYMax slice"
+       xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="peak" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#bca16d"/>
+        <stop offset="100%" stop-color="#171321"/>
+      </linearGradient>
+    </defs>
+    <path d="M0 300 L0 210 L150 100 L220 165 L330 45
+             L470 205 L570 125 L690 225 L830 65 L980 205
+             L1080 130 L1200 220 L1200 300 Z"
+          fill="url(#peak)" opacity="0.8"/>
+    <path d="M150 100 L220 165 L330 45 L295 145 L330 112
+             L370 155 L330 45 L470 205"
+          fill="none" stroke="#e5ce98" stroke-width="2"
+          opacity="0.8"/>
+    <path d="M570 125 L690 225 L830 65 L790 155
+             L830 120 L870 160 L830 65 L980 205"
+          fill="none" stroke="#cbb17c" stroke-width="2"
+          opacity="0.7"/>
+  </svg>
+</body>
+</html>
